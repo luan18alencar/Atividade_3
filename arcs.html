@@ -32,7 +32,7 @@ body {
 </style>
 
     <link rel="stylesheet" href="MyStyles.css">
-    <title>Solo Leveling</title>
+    <title>Feerug Showdown</title>
     <style>
         body {
             background-color: rgb(34, 16, 63);
@@ -45,6 +45,14 @@ body {
             text-decoration: none; /* Optional: removes underline from links */
             margin-right: 10px; /* Optional: adds some spacing between the links */
         }
+
+        .hover-zoom {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+        }
     </style>
 <style type="text/css" id="operaUserStyle"></style></head>
 
@@ -52,9 +60,8 @@ body {
 
 
 
-
 <div class="center-container">
-    <header>
+      <header>
         <nav>
             <a href="index.html">Home</a>
             <a href="chapters.html">Capitulos</a>
@@ -63,21 +70,29 @@ body {
         </nav>
     </header>
 
-    <img src="https://4kwallpapers.com/images/wallpapers/solo-leveling-1920x1200-20374.png" alt="feerugshowdownlogo" width="600" height="439">
+    <img src="feerug showdown logo.png" alt="feerugshowdownlogo" width="1161" height="439">
 
-    <p>Solo Leveling é um manhua sul-coreano (web novel adaptada para webtoon) que rapidamente se tornou extremamente popular. A história segue Sung Jin-Woo, o caçador mais fraco do mundo, que após uma provação quase fatal em uma dungeon, desperta com um sistema único que o permite subir de nível infinitamente, tornando-se exponencialmente mais forte. É uma história de ascensão de poder, repleta de ação frenética, monstros épicos e um protagonista carismático que evolui de "o mais fraco" para uma força imparável.</p>
-<img src="https://m.media-amazon.com/images/I/816hywlmu-L._AC_UF1000,1000_QL80_.jpg" alt="Image 1" width="794" height="1123">
+    <p>The Arcs of Feerug Showdown</p>
+    <a href="chapter1.html">
+        <img class="hover-zoom" src="https://i.imgur.com/yVMthKE.jpeg" alt="Image 1" width="264" height="374">
+    </a>
+    <a href="chp7.html">
+        <img class="hover-zoom" src="https://i.imgur.com/d8IccxS.jpeg" alt="Image 2" width="264" height="374">
+    </a>
 
-
-    
-    <iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
-</div>
-<footer>
+    <footer>
   <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
 </footer>
+</div>
 
 <script>
-
+    function redirectToChapter() {
+        var dropdown = document.getElementById("portfolio");
+        var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+        if (selectedValue !== "") {
+            window.location.href = selectedValue;
+        }
+    }
 </script>
 
 
